@@ -30,7 +30,7 @@ export class LoginComponent {
     this.authService.login(email,password).subscribe({
       next:() => {
         alert('login success!!!');
-        this.router.navigate(['/home/unsigned']);
+        this.router.navigate(['/home']);
       },
       error:err => alert('login failed' + err.error)
     })
